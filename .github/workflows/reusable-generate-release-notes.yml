@@ -1,0 +1,35 @@
+name: Reusable Generate Release Notes
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  generate-release-notes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6.0.2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.2.0
+        with:
+          cache: pip
+          python-version: "3.10"
+
+      - name: Generate release notes
+        working-directory: aaop
+        run: |
+          mkdir -p artifacts
+          python tools/testing/generate_release_notes.py --output artifacts/release-notes.md
+
+      - name: Upload release notes
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: aaop-release-notes
+          path: aaop/artifacts/release-notes.md
+          if-no-files-found: error

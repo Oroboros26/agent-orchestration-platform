@@ -1,0 +1,44 @@
+[
+  {
+    "id": "mkt-001",
+    "question": "Which channel had the highest ROAS in March 2026?",
+    "must_contain": ["email", "newsletter", "8.50", "20.95"],
+    "must_not_contain": ["I don't know", "no data"],
+    "notes": "Newsletter March had ROAS 20.95, Spring Product Launch email had 8.50 — email dominates"
+  },
+  {
+    "id": "mkt-002",
+    "question": "Which campaigns were unprofitable (ROAS below 1.0) in March 2026?",
+    "must_contain": ["Brand Awareness", "0.93", "0.70"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Brand Awareness Q1 social ROAS 0.93 and display 0.70 — both below 1.0"
+  },
+  {
+    "id": "mkt-003",
+    "question": "What was the total ad spend across all campaigns in April 2026?",
+    "must_contain": ["April", "spend"],
+    "must_not_contain": ["I don't know", "no data"],
+    "notes": "Sum of all SPEND_USD for month 2026-04-01"
+  },
+  {
+    "id": "mkt-004",
+    "question": "Which channel generated the most conversions in April 2026?",
+    "must_contain": ["email", "Q2 Demand Gen", "594"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Q2 Demand Gen email: 594 conversions — highest single row in April"
+  },
+  {
+    "id": "mkt-005",
+    "question": "Compare click-through rates across channels in March 2026.",
+    "must_contain": ["email", "paid_search", "display", "CTR", "%"],
+    "must_not_contain": ["I don't know", "no data"],
+    "notes": "Email: 5-7%, paid_search: 3-6%, social: 1-1.4%, display: 0.3% — expected ranking"
+  },
+  {
+    "id": "mkt-006",
+    "question": "Which channel had the lowest cost per lead in April 2026?",
+    "must_contain": ["email", "newsletter", "2.39"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Newsletter April CPL_USD 2.39 — lowest by far vs paid channels at $20-$100"
+  }
+]

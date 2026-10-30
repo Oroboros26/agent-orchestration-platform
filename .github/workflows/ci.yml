@@ -1,0 +1,99 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  lint-typecheck-test:
+    name: Lint / Type-check / Unit tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6.0.2
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.2.0
+        with:
+          cache: pip
+          python-version: "3.10"
+
+      - name: Install dependencies
+        working-directory: aaop
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: Lint (ruff)
+        working-directory: aaop
+        run: ruff check .
+
+      - name: Type-check (mypy)
+        working-directory: aaop
+        run: mypy core/
+
+      - name: Unit tests (pytest)
+        working-directory: aaop
+        env:
+          AAOP_ENV: dev
+          ANTHROPIC_API_KEY: test-key-ci
+          GROQ_API_KEY: test-key-ci
+          OPENAI_API_KEY: test-key-ci
+        run: pytest tests/unit/ -v
+
+  validate-agents:
+    name: Validate agent registry
+    runs-on: ubuntu-latest
+    needs: lint-typecheck-test
+
+    steps:
+      - uses: actions/checkout@v6.0.2
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.2.0
+        with:
+          cache: pip
+          python-version: "3.10"
+
+      - name: Install dependencies
+        working-directory: aaop
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate all agents
+        working-directory: aaop
+        run: python tools/testing/validate_agents.py
+
+  registry-guard:
+    name: Registry guard
+    runs-on: ubuntu-latest
+    needs: [validate-agents]
+
+    steps:
+      - uses: actions/checkout@v6.0.2
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.2.0
+        with:
+          cache: pip
+          python-version: "3.10"
+
+      - name: Install dependencies
+        working-directory: aaop
+        run: pip install pyyaml pydantic
+
+      - name: Check registry pins
+        working-directory: aaop
+        run: python tools/testing/registry_guard.py

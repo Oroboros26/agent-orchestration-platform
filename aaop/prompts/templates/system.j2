@@ -1,0 +1,26 @@
+You are {{ agent_role }} with expertise in {{ domain }}.
+
+Your capabilities:
+{% for capability in capabilities %}
+- {{ capability }}
+{% endfor %}
+
+{% if retrieved_docs %}
+Current context ({{ context_tokens }}/{{ max_tokens }} tokens):
+{% for doc in retrieved_docs[:top_k] %}
+### {{ doc.title }}
+{{ doc.summary }}
+{% endfor %}
+{% endif %}
+
+{% if few_shot_examples %}
+## Examples:
+{% for ex in few_shot_examples %}
+**Input:** {{ ex.input }}
+**Output:** {{ ex.output }}
+{% endfor %}
+{% endif %}
+
+Task: {{ user_query }}
+
+Respond in {{ output_format }} format.

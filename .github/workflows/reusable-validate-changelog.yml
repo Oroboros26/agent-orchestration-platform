@@ -1,0 +1,26 @@
+name: Reusable Validate Changelog
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-changelog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6.0.2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.2.0
+        with:
+          cache: pip
+          python-version: "3.10"
+
+      - name: Validate changed changelogs
+        working-directory: aaop
+        run: python tools/testing/validate_changelog.py

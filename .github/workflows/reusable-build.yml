@@ -1,0 +1,35 @@
+name: Reusable Build Checks
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6.0.2
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.2.0
+        with:
+          cache: pip
+          python-version: "3.10"
+
+      - name: Install dependencies
+        working-directory: aaop
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: Compile Python sources
+        working-directory: aaop
+        run: python -m compileall core api tools ui __main__.py run_agent.py
+
+      - name: CLI help
+        working-directory: aaop
+        run: python __main__.py --help

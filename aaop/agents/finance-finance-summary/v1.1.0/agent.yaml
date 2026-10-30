@@ -1,0 +1,61 @@
+name: finance-finance-summary
+version: v1.1.0
+description: Answers business questions about the 'finance_summary' semantic view for the finance business unit.
+
+role: >
+  You are a senior financial analyst for the finance team. You interpret budget vs actuals
+  data, identify variance drivers, and communicate findings clearly to non-finance stakeholders.
+  Always quantify findings with numbers. Flag any department more than 10% over budget.
+
+goal: >
+  Answer the user's business question using the finance_summary data.
+  Structure your answer: (1) direct answer, (2) supporting numbers, (3) one-line recommendation.
+  Never say "I don't have enough data" if the answer can be inferred from what is available.
+
+model:
+  tier: balanced
+  temperature: 0.0
+  max_output_tokens: 1500
+  max_prompt_tokens: 6000
+  total_token_budget: 7500
+  provider: auto
+
+workflow:
+  entry: analyze
+  max_iterations: 5
+  steps:
+    - id: analyze
+      description: >
+        Interpret the question, identify which columns and rows answer it,
+        and calculate any required metrics (variance %, cost per head delta, etc.)
+      next: draft
+    - id: draft
+      description: >
+        Write a structured answer: (1) direct answer in plain English,
+        (2) key numbers from the data, (3) one actionable recommendation.
+      next: END
+
+data_source:
+  type: snowflake_semantic_view
+  view: finance_summary
+  columns:
+    - MONTH
+    - DEPARTMENT
+    - COST_CENTER
+    - BUDGET_USD
+    - ACTUALS_USD
+    - VARIANCE_USD
+    - VARIANCE_PCT
+    - HEADCOUNT
+    - COST_PER_HEAD
+    - CATEGORY
+
+schemas:
+  input: schemas/input/business_qa_request.py
+  output: schemas/output/business_qa_response.py
+
+metadata:
+  business_unit: finance
+  source_view: finance_summary
+  created: "2026-04-24"
+  tags: [finance, finance_summary, semantic-view, v1.1]

@@ -1,0 +1,14 @@
+[
+  {"name": "MONTH", "type": "DATE", "description": "First day of the reporting month"},
+  {"name": "CAMPAIGN_NAME", "type": "VARCHAR", "description": "Name of the marketing campaign"},
+  {"name": "CHANNEL", "type": "VARCHAR", "description": "Channel: email, paid_search, social, display, events"},
+  {"name": "IMPRESSIONS", "type": "INTEGER", "description": "Total ad impressions served"},
+  {"name": "CLICKS", "type": "INTEGER", "description": "Total clicks on ads"},
+  {"name": "CTR_PCT", "type": "FLOAT", "description": "Click-through rate as a percentage"},
+  {"name": "CONVERSIONS", "type": "INTEGER", "description": "Number of leads or purchases attributed"},
+  {"name": "CONVERSION_RATE_PCT", "type": "FLOAT", "description": "Conversions divided by clicks as a percentage"},
+  {"name": "SPEND_USD", "type": "NUMBER", "description": "Total ad spend in USD"},
+  {"name": "REVENUE_USD", "type": "NUMBER", "description": "Revenue attributed to this campaign"},
+  {"name": "ROAS", "type": "FLOAT", "description": "Return on ad spend: revenue divided by spend"},
+  {"name": "CPL_USD", "type": "NUMBER", "description": "Cost per lead in USD"}
+]

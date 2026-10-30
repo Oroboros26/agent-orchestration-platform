@@ -1,0 +1,56 @@
+data_source:
+  columns:
+  - MONTH
+  - INCIDENT_ID
+  - SEVERITY
+  - SERVICE
+  - TEAM_OWNER
+  - STATUS
+  - TIME_TO_DETECT_MINS
+  - TIME_TO_RESOLVE_MINS
+  - ROOT_CAUSE
+  - CUSTOMER_IMPACTED
+  - POSTMORTEM_DONE
+  type: snowflake_semantic_view
+  view: ops_incidents
+description: Answers business questions about the 'ops_incidents' semantic view for
+  the ops business unit.
+goal: Answer the user's business question using the columns available in 'ops_incidents'.
+  Return a clear, concise answer. If a calculation is needed, show the formula.
+metadata:
+  author: ''
+  business_unit: ops
+  created: '2026-04-24'
+  generated_by: tools/generate_agent.py
+  source_view: ops_incidents
+  tags:
+  - ops
+  - ops_incidents
+  - semantic-view
+  - auto-generated
+model:
+  max_output_tokens: 1500
+  max_prompt_tokens: 6000
+  provider: auto
+  temperature: 0.0
+  tier: balanced
+  total_token_budget: 7500
+name: ops-ops-incidents
+role: You are a data analyst for the ops team. You answer questions using data from
+  the 'ops_incidents' Snowflake semantic view. Always be precise, cite column names
+  when relevant, and say 'I don't know' if the question cannot be answered from the
+  available data.
+schemas:
+  input: schemas/input/business_qa_request.py
+  output: schemas/output/business_qa_response.py
+version: v1.0.0
+workflow:
+  entry: analyze
+  max_iterations: 5
+  steps:
+  - description: Interpret the question against the view schema
+    id: analyze
+    next: draft
+  - description: Write a clear, data-grounded answer
+    id: draft
+    next: END

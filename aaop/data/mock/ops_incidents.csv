@@ -1,0 +1,21 @@
+MONTH,INCIDENT_ID,SEVERITY,SERVICE,TEAM_OWNER,STATUS,TIME_TO_DETECT_MINS,TIME_TO_RESOLVE_MINS,ROOT_CAUSE,CUSTOMER_IMPACTED,POSTMORTEM_DONE
+2026-03-01,INC-1001,P1,Payment API,Platform,Resolved,4,87,Deployment,True,True
+2026-03-01,INC-1002,P2,Data Pipeline,Data,Resolved,12,210,Config,False,True
+2026-03-01,INC-1003,P3,Auth Service,Security,Resolved,25,45,Third-party,False,False
+2026-03-01,INC-1004,P2,Search API,Platform,Resolved,8,130,Infra,True,True
+2026-03-01,INC-1005,P4,Admin Dashboard,Platform,Resolved,60,480,Config,False,False
+2026-03-01,INC-1006,P1,Checkout Service,Platform,Resolved,3,55,Deployment,True,True
+2026-03-01,INC-1007,P3,Reporting Service,Data,Resolved,30,90,Config,False,False
+2026-03-01,INC-1008,P2,Notification Service,Infra,Resolved,15,175,Third-party,True,True
+2026-03-01,INC-1009,P4,Internal Tools,Infra,Resolved,90,320,Unknown,False,False
+2026-03-01,INC-1010,P3,ML Inference,Data,Resolved,20,60,Deployment,False,False
+2026-04-01,INC-1011,P1,Payment API,Platform,Resolved,6,102,Config,True,True
+2026-04-01,INC-1012,P2,Data Pipeline,Data,Resolved,18,190,Deployment,False,True
+2026-04-01,INC-1013,P1,Auth Service,Security,Resolved,2,40,Third-party,True,True
+2026-04-01,INC-1014,P3,Search API,Platform,Resolved,35,70,Infra,False,False
+2026-04-01,INC-1015,P2,Checkout Service,Platform,Open,10,,Deployment,True,False
+2026-04-01,INC-1016,P4,Reporting Service,Data,Resolved,75,400,Config,False,False
+2026-04-01,INC-1017,P2,Notification Service,Infra,Resolved,22,145,Third-party,True,False
+2026-04-01,INC-1018,P3,ML Inference,Data,In Progress,14,,Deployment,False,False
+2026-04-01,INC-1019,P1,Database Cluster,Infra,Resolved,5,68,Config,True,True
+2026-04-01,INC-1020,P4,Admin Dashboard,Platform,Resolved,120,540,Unknown,False,False

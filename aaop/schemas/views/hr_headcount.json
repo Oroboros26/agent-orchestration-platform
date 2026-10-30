@@ -1,0 +1,14 @@
+[
+  {"name": "MONTH", "type": "DATE", "description": "Month of the headcount snapshot (YYYY-MM-01)"},
+  {"name": "DEPARTMENT", "type": "VARCHAR", "description": "Department name: Engineering, Sales, Marketing, Finance, HR, Operations, Legal"},
+  {"name": "TEAM", "type": "VARCHAR", "description": "Sub-team within the department"},
+  {"name": "EMPLOYEE_NAME", "type": "VARCHAR", "description": "Full name of the employee"},
+  {"name": "LEVEL", "type": "VARCHAR", "description": "Job level: IC1, IC2, IC3, IC4, M1, M2, M3 (M = Manager)"},
+  {"name": "STATUS", "type": "VARCHAR", "description": "Employment status: Active, On Leave, Terminated, New Hire"},
+  {"name": "HIRE_DATE", "type": "DATE", "description": "Date the employee was hired"},
+  {"name": "TENURE_MONTHS", "type": "NUMBER", "description": "Number of months the employee has been with the company"},
+  {"name": "LOCATION", "type": "VARCHAR", "description": "Office location or Remote: London, New York, Singapore, Remote"},
+  {"name": "SALARY_BAND_USD", "type": "NUMBER", "description": "Annual salary band midpoint in USD"},
+  {"name": "OPEN_ROLES", "type": "NUMBER", "description": "Number of open headcount roles approved for this team in this month"},
+  {"name": "ATTRITION_FLAG", "type": "BOOLEAN", "description": "True if this employee left the company in this month"}
+]

@@ -1,0 +1,55 @@
+data_source:
+  columns:
+  - MONTH
+  - DEPARTMENT
+  - COST_CENTER
+  - BUDGET_USD
+  - ACTUALS_USD
+  - VARIANCE_USD
+  - VARIANCE_PCT
+  - HEADCOUNT
+  - COST_PER_HEAD
+  - CATEGORY
+  type: snowflake_semantic_view
+  view: finance_summary
+description: Answers business questions about the 'finance_summary' semantic view
+  for the finance business unit.
+goal: Answer the user's business question using the columns available in 'finance_summary'.
+  Return a clear, concise answer. If a calculation is needed, show the formula.
+metadata:
+  author: ''
+  business_unit: finance
+  created: '2026-04-24'
+  generated_by: tools/generate_agent.py
+  source_view: finance_summary
+  tags:
+  - finance
+  - finance_summary
+  - semantic-view
+  - auto-generated
+model:
+  max_output_tokens: 1500
+  max_prompt_tokens: 6000
+  provider: auto
+  temperature: 0.0
+  tier: balanced
+  total_token_budget: 7500
+name: finance-finance-summary
+role: You are a data analyst for the finance team. You answer questions using data
+  from the 'finance_summary' Snowflake semantic view. Always be precise, cite column
+  names when relevant, and say 'I don't know' if the question cannot be answered from
+  the available data.
+schemas:
+  input: schemas/input/business_qa_request.py
+  output: schemas/output/business_qa_response.py
+version: v1.0.0
+workflow:
+  entry: analyze
+  max_iterations: 5
+  steps:
+  - description: Interpret the question against the view schema
+    id: analyze
+    next: draft
+  - description: Write a clear, data-grounded answer
+    id: draft
+    next: END

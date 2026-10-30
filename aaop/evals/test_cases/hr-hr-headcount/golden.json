@@ -1,0 +1,37 @@
+[
+  {
+    "id": "hr-001",
+    "question": "Which department had attrition in April 2026?",
+    "must_contain": ["Engineering", "Marketing"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Tom Nguyen (Engineering/Data) and Omar Khalid (Marketing/Brand) left in April. Both departments must be named."
+  },
+  {
+    "id": "hr-002",
+    "question": "How many open roles are approved across all departments in April 2026?",
+    "must_contain": ["10", "11", "12", "13"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Sum of OPEN_ROLES in April ≈ 10-13. Answer must give a total number."
+  },
+  {
+    "id": "hr-003",
+    "question": "Which department has the most employees on leave?",
+    "must_contain": ["Engineering", "Chloe"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Chloe Dubois (Engineering/Security) is On Leave in both months. Answer must name Engineering."
+  },
+  {
+    "id": "hr-004",
+    "question": "What is the average tenure of Engineering employees in March 2026?",
+    "must_contain": ["month", "year"],
+    "must_not_contain": ["I don't know", "cannot"],
+    "notes": "Engineering has 8 employees in March with tenures 0-73 months. Answer must include a calculated average."
+  },
+  {
+    "id": "hr-005",
+    "question": "How many new hires joined in March 2026?",
+    "must_contain": ["2", "Sara", "Priya"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Sara Kovacs and Priya Sharma are New Hire status in March. Answer must give count of 2 and name them."
+  }
+]

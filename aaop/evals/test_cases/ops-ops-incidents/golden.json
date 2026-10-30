@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ops-001",
+    "question": "How many P1 incidents occurred in March 2026?",
+    "must_contain": ["2", "P1", "March"],
+    "must_not_contain": ["I don't know", "cannot"],
+    "notes": "INC-1001 and INC-1006 are P1 in March. Answer must give count of 2."
+  },
+  {
+    "id": "ops-002",
+    "question": "Which team had the most incidents in April 2026?",
+    "must_contain": ["Platform", "Data"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Platform has 4 incidents in April, Data has 3. Answer must name Platform."
+  },
+  {
+    "id": "ops-003",
+    "question": "What is the average time to resolve P1 incidents?",
+    "must_contain": ["minute", "hour"],
+    "must_not_contain": ["I don't know", "cannot calculate"],
+    "notes": "P1 resolve times: 87, 55, 102, 40, 68 mins. Average ~70 mins. Answer must include a number."
+  },
+  {
+    "id": "ops-004",
+    "question": "Are there any open incidents right now?",
+    "must_contain": ["INC-1015", "INC-1018", "open"],
+    "must_not_contain": ["no open", "I don't know"],
+    "notes": "INC-1015 (Checkout, Open) and INC-1018 (ML Inference, In Progress). Answer must name at least one."
+  },
+  {
+    "id": "ops-005",
+    "question": "What is the most common root cause of incidents?",
+    "must_contain": ["Deployment", "Config"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Deployment and Config are tied at 6 each. Answer must name at least one of them."
+  }
+]

@@ -1,0 +1,7 @@
+name: legal-qa
+version: v1.0.0
+description: Basic legal Q&A — plain text output
+model_tier: balanced
+temperature: 0.0
+max_tokens: 500
+output_format: plain_text

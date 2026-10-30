@@ -1,0 +1,14 @@
+[
+  {"name": "MONTH", "type": "DATE", "description": "Month of the sales data (YYYY-MM-01)"},
+  {"name": "SALES_REP", "type": "VARCHAR", "description": "Full name of the sales representative"},
+  {"name": "REGION", "type": "VARCHAR", "description": "Sales region: EMEA, APAC, AMER, LATAM"},
+  {"name": "TEAM", "type": "VARCHAR", "description": "Sales team: Enterprise, Mid-Market, SMB"},
+  {"name": "DEAL_NAME", "type": "VARCHAR", "description": "Name or identifier of the deal"},
+  {"name": "STAGE", "type": "VARCHAR", "description": "Current deal stage: Prospecting, Qualification, Proposal, Negotiation, Closed Won, Closed Lost"},
+  {"name": "DEAL_VALUE_USD", "type": "NUMBER", "description": "Total deal value in USD"},
+  {"name": "QUOTA_USD", "type": "NUMBER", "description": "Monthly quota target for the sales rep in USD"},
+  {"name": "ATTAINMENT_PCT", "type": "NUMBER", "description": "Quota attainment percentage (closed won / quota * 100)"},
+  {"name": "PROBABILITY_PCT", "type": "NUMBER", "description": "Estimated probability of closing (0-100)"},
+  {"name": "EXPECTED_CLOSE_DATE", "type": "DATE", "description": "Expected date the deal will close"},
+  {"name": "DAYS_IN_STAGE", "type": "NUMBER", "description": "Number of days the deal has been in the current stage"}
+]

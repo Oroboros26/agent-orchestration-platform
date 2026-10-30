@@ -1,0 +1,44 @@
+[
+  {
+    "id": "sc-001",
+    "question": "Which SKUs had a stockout in March 2026?",
+    "must_contain": ["SKU-002", "SKU-006"],
+    "must_not_contain": ["I don't know", "no data"],
+    "notes": "USB-C Hub and Mechanical Keyboard both have STOCKOUT_FLAG=True in March"
+  },
+  {
+    "id": "sc-002",
+    "question": "Which supplier has the worst on-time delivery performance?",
+    "must_contain": ["SafetyFirst", "72"],
+    "must_not_contain": ["I don't know"],
+    "notes": "SafetyFirst Inc has ON_TIME_DELIVERY_PCT of 72% — lowest of all suppliers"
+  },
+  {
+    "id": "sc-003",
+    "question": "Which SKUs are at risk of stockout in April 2026?",
+    "must_contain": ["SKU-001", "days"],
+    "must_not_contain": ["I don't know", "no data"],
+    "notes": "SKU-001 has only 18.7 days of stock with 14-day lead time — tight margin"
+  },
+  {
+    "id": "sc-004",
+    "question": "Which supplier has the longest lead time?",
+    "must_contain": ["SafetyFirst", "28"],
+    "must_not_contain": ["I don't know"],
+    "notes": "SafetyFirst Inc has LEAD_TIME_DAYS=28 — longest of all suppliers"
+  },
+  {
+    "id": "sc-005",
+    "question": "What is the most expensive product we stock?",
+    "must_contain": ["Ergonomic Office Chair", "210"],
+    "must_not_contain": ["I don't know"],
+    "notes": "SKU-003 Ergonomic Office Chair has UNIT_COST_USD=210.00 — highest cost"
+  },
+  {
+    "id": "sc-006",
+    "question": "Which products have days of stock below their lead time in April 2026?",
+    "must_contain": ["SKU-001", "lead time"],
+    "must_not_contain": ["I don't know", "no data"],
+    "notes": "SKU-001 has 18.7 days of stock vs 14-day lead time — barely safe but worth flagging"
+  }
+]

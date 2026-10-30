@@ -1,0 +1,67 @@
+name: legal-qa
+version: v1.0.0
+description: >
+  Analyzes contracts, extracts key clauses,
+  identifies risk levels, returns structured JSON.
+
+model:
+  tier: balanced
+  provider: auto
+  temperature: 0.0
+  max_output_tokens: 2000
+  max_prompt_tokens: 6000
+  total_token_budget: 8000
+
+role: >
+  You are a legal document analyst with expertise in contract law,
+  risk assessment, and structured data extraction.
+
+goal: >
+  Given a contract or legal document, identify all material clauses,
+  assess the risk level of each clause, and return a structured
+  JSON report.
+
+workflow:
+  entry: research
+  steps:
+    - id: research
+      description: Retrieve and load the document content
+      next: analyze
+    - id: analyze
+      description: Extract clauses and assess risk levels
+      next: draft
+    - id: draft
+      description: Format output as structured JSON
+      next: END
+  max_iterations: 10
+
+tools:
+  - document_retrieval
+
+schemas:
+  input: schemas/input/legal_qa_request.py
+  output: schemas/output/legal_qa_response.py
+
+eval:
+  golden_dataset: evals/golden_datasets/legal-qa.json
+  min_score: 0.80
+  metrics:
+    - json_schema_match
+    - semantic_similarity
+
+deployment:
+  environments:
+    dev: true
+    staging: false
+    prod: false
+  airflow_dag: airflow/dags/legal_qa_batch.py
+  schedule: "0 2 * * *"
+
+metadata:
+  author: ""
+  created: 2026-04-23
+  tags:
+    - legal
+    - contract-analysis
+    - structured-output
+  changelog: CHANGELOG.md

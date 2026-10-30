@@ -1,0 +1,7 @@
+name: legal-qa
+version: v1.1.0
+description: Legal Q&A v2 — structured JSON output
+model_tier: balanced
+temperature: 0.0
+max_tokens: 500
+output_format: json

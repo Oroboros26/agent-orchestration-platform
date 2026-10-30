@@ -1,0 +1,16 @@
+[
+  {"name": "MONTH",            "type": "DATE",    "description": "First day of the reporting month"},
+  {"name": "SKU",              "type": "VARCHAR",  "description": "Stock keeping unit identifier"},
+  {"name": "PRODUCT_NAME",     "type": "VARCHAR",  "description": "Human-readable product name"},
+  {"name": "CATEGORY",         "type": "VARCHAR",  "description": "Product category: electronics, apparel, food, industrial"},
+  {"name": "SUPPLIER_NAME",    "type": "VARCHAR",  "description": "Name of the supplier"},
+  {"name": "UNITS_ON_HAND",    "type": "INTEGER",  "description": "Current inventory units in warehouse"},
+  {"name": "UNITS_ORDERED",    "type": "INTEGER",  "description": "Units on order from supplier"},
+  {"name": "UNITS_SOLD",       "type": "INTEGER",  "description": "Units sold during the month"},
+  {"name": "REORDER_POINT",    "type": "INTEGER",  "description": "Minimum stock level before reorder is triggered"},
+  {"name": "DAYS_OF_STOCK",    "type": "FLOAT",    "description": "Estimated days of inventory remaining at current sell rate"},
+  {"name": "LEAD_TIME_DAYS",   "type": "INTEGER",  "description": "Supplier lead time in days"},
+  {"name": "ON_TIME_DELIVERY_PCT", "type": "FLOAT","description": "Percentage of deliveries received on time from this supplier"},
+  {"name": "UNIT_COST_USD",    "type": "NUMBER",   "description": "Cost per unit in USD"},
+  {"name": "STOCKOUT_FLAG",    "type": "BOOLEAN",  "description": "True if stock hit zero during the month"}
+]

@@ -1,0 +1,27 @@
+MONTH,SALES_REP,REGION,TEAM,DEAL_NAME,STAGE,DEAL_VALUE_USD,QUOTA_USD,ATTAINMENT_PCT,PROBABILITY_PCT,EXPECTED_CLOSE_DATE,DAYS_IN_STAGE
+2026-03-01,Rep_01,AMER,Enterprise,Acme Corp — Platform License,Closed Won,180000,150000,120.0,100,2026-03-15,0
+2026-03-01,Rep_01,AMER,Enterprise,GlobalTech — Security Suite,Negotiation,95000,150000,120.0,80,2026-04-10,12
+2026-03-01,Rep_02,AMER,Mid-Market,Finova — Analytics Bundle,Closed Won,62000,80000,77.5,100,2026-03-28,0
+2026-03-01,Rep_02,AMER,Mid-Market,RetailCo — Dashboard Pro,Proposal,38000,80000,77.5,55,2026-04-20,8
+2026-03-01,Rep_02,AMER,Mid-Market,ShipFast — Logistics AI,Closed Lost,45000,80000,77.5,0,2026-03-22,0
+2026-03-01,Rep_03,EMEA,Enterprise,Eurobank — Compliance Tool,Closed Won,210000,160000,131.3,100,2026-03-10,0
+2026-03-01,Rep_03,EMEA,Enterprise,AutoGroup — Fleet Manager,Negotiation,130000,160000,131.3,75,2026-04-05,7
+2026-03-01,Rep_04,APAC,Enterprise,SingTel — Data Platform,Qualification,250000,200000,0.0,40,2026-06-01,21
+2026-03-01,Rep_04,APAC,Enterprise,ANZ Bank — Risk Module,Proposal,115000,200000,0.0,60,2026-05-15,14
+2026-03-01,Rep_05,LATAM,SMB,MercadoTech — Starter Plan,Closed Won,18000,50000,36.0,100,2026-03-30,0
+2026-03-01,Rep_05,LATAM,SMB,BrazilFin — Growth Plan,Closed Won,22000,50000,36.0,100,2026-03-25,0
+2026-03-01,Rep_05,LATAM,SMB,ColombiaRetail — Basic,Prospecting,8000,50000,36.0,20,2026-05-01,5
+2026-03-01,Rep_06,APAC,Mid-Market,TechStartup JP — Pro,Closed Won,55000,90000,61.1,100,2026-03-18,0
+2026-03-01,Rep_06,APAC,Mid-Market,MediaCorp AU — Insights,Negotiation,70000,90000,61.1,70,2026-04-15,9
+2026-04-01,Rep_01,AMER,Enterprise,GlobalTech — Security Suite,Closed Won,95000,150000,63.3,100,2026-04-10,0
+2026-04-01,Rep_01,AMER,Enterprise,CloudNine — Enterprise Pack,Proposal,220000,150000,63.3,65,2026-05-20,6
+2026-04-01,Rep_02,AMER,Mid-Market,RetailCo — Dashboard Pro,Closed Won,38000,80000,47.5,100,2026-04-20,0
+2026-04-01,Rep_02,AMER,Mid-Market,FoodChain — Operations AI,Qualification,55000,80000,47.5,35,2026-06-10,3
+2026-04-01,Rep_03,EMEA,Enterprise,AutoGroup — Fleet Manager,Closed Won,130000,160000,81.3,100,2026-04-05,0
+2026-04-01,Rep_03,EMEA,Enterprise,NordicBank — AML Suite,Proposal,175000,160000,81.3,60,2026-05-30,10
+2026-04-01,Rep_04,APAC,Enterprise,SingTel — Data Platform,Proposal,250000,200000,0.0,55,2026-06-01,18
+2026-04-01,Rep_04,APAC,Enterprise,ANZ Bank — Risk Module,Negotiation,115000,200000,0.0,80,2026-05-15,11
+2026-04-01,Rep_05,LATAM,SMB,ColombiaRetail — Basic,Qualification,8000,50000,0.0,40,2026-05-01,12
+2026-04-01,Rep_05,LATAM,SMB,ArgentinaTech — Starter,Prospecting,12000,50000,0.0,15,2026-06-15,2
+2026-04-01,Rep_06,APAC,Mid-Market,MediaCorp AU — Insights,Closed Won,70000,90000,77.8,100,2026-04-15,0
+2026-04-01,Rep_06,APAC,Mid-Market,KoreaSME — Analytics,Proposal,42000,90000,77.8,50,2026-05-25,7

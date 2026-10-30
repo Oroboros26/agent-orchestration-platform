@@ -1,0 +1,34 @@
+# AI session files — not for the repo
+CLAUDE.md
+claude_conv.MD
+ai_context/
+context/
+.claude/
+
+# Internal company docs
+my_Data-Platform*.md
+
+# External repos cloned for local comparison
+external-research/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.coverage
+dist/
+build/
+*.egg-info/
+
+# Environment
+.env
+*.env.local
+
+# Logs (generated at runtime)
+aaop/logs/
+
+# OS
+.DS_Store
+Thumbs.db

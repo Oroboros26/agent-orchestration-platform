@@ -1,0 +1,35 @@
+name: Reusable Lint
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6.0.2
+
+      - name: Set up Python
+        uses: actions/setup-python@v6.2.0
+        with:
+          cache: pip
+          python-version: "3.10"
+
+      - name: Install dependencies
+        working-directory: aaop
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: Ruff
+        working-directory: aaop
+        run: ruff check .
+
+      - name: Mypy
+        working-directory: aaop
+        run: mypy core/

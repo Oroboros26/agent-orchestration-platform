@@ -1,0 +1,57 @@
+data_source:
+  columns:
+  - MONTH
+  - DEPARTMENT
+  - TEAM
+  - EMPLOYEE_NAME
+  - LEVEL
+  - STATUS
+  - HIRE_DATE
+  - TENURE_MONTHS
+  - LOCATION
+  - SALARY_BAND_USD
+  - OPEN_ROLES
+  - ATTRITION_FLAG
+  type: snowflake_semantic_view
+  view: hr_headcount
+description: Answers business questions about the 'hr_headcount' semantic view for
+  the hr business unit.
+goal: Answer the user's business question using the columns available in 'hr_headcount'.
+  Return a clear, concise answer. If a calculation is needed, show the formula.
+metadata:
+  author: ''
+  business_unit: hr
+  created: '2026-04-24'
+  generated_by: tools/generate_agent.py
+  source_view: hr_headcount
+  tags:
+  - hr
+  - hr_headcount
+  - semantic-view
+  - auto-generated
+model:
+  max_output_tokens: 1500
+  max_prompt_tokens: 6000
+  provider: auto
+  temperature: 0.0
+  tier: balanced
+  total_token_budget: 7500
+name: hr-hr-headcount
+role: You are a data analyst for the hr team. You answer questions using data from
+  the 'hr_headcount' Snowflake semantic view. Always be precise, cite column names
+  when relevant, and say 'I don't know' if the question cannot be answered from the
+  available data.
+schemas:
+  input: schemas/input/business_qa_request.py
+  output: schemas/output/business_qa_response.py
+version: v1.0.0
+workflow:
+  entry: analyze
+  max_iterations: 5
+  steps:
+  - description: Interpret the question against the view schema
+    id: analyze
+    next: draft
+  - description: Write a clear, data-grounded answer
+    id: draft
+    next: END

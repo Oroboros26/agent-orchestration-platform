@@ -1,0 +1,57 @@
+MONTH,DEPARTMENT,TEAM,EMPLOYEE_NAME,LEVEL,STATUS,HIRE_DATE,TENURE_MONTHS,LOCATION,SALARY_BAND_USD,OPEN_ROLES,ATTRITION_FLAG
+2026-03-01,Engineering,Platform,Employee_01,IC4,Active,2022-01-15,38,London,135000,2,False
+2026-03-01,Engineering,Platform,Employee_02,IC3,Active,2023-06-01,21,Remote,110000,2,False
+2026-03-01,Engineering,Platform,Employee_03,IC3,Active,2023-09-12,18,Singapore,108000,2,False
+2026-03-01,Engineering,Platform,Employee_04,IC2,New Hire,2026-02-10,1,London,90000,2,False
+2026-03-01,Engineering,Data,Employee_05,M2,Active,2020-03-01,73,New York,160000,1,False
+2026-03-01,Engineering,Data,Employee_06,IC4,Active,2021-07-20,55,Remote,132000,1,False
+2026-03-01,Engineering,Data,Employee_07,IC2,Active,2024-04-01,11,New York,88000,1,False
+2026-03-01,Engineering,Data,Employee_08,IC1,New Hire,2026-03-01,0,Remote,75000,1,False
+2026-03-01,Engineering,Security,Employee_09,M1,Active,2021-11-01,52,London,145000,0,False
+2026-03-01,Engineering,Security,Employee_10,IC3,On Leave,2022-08-15,43,London,112000,0,False
+2026-03-01,Sales,Enterprise,Employee_11,IC3,Active,2023-01-10,26,New York,95000,1,False
+2026-03-01,Sales,Enterprise,Employee_12,IC4,Active,2021-05-03,58,London,118000,1,False
+2026-03-01,Sales,Mid-Market,Employee_13,IC3,Active,2022-10-01,29,New York,92000,0,False
+2026-03-01,Sales,Mid-Market,Employee_14,IC2,Active,2024-01-15,14,Singapore,82000,0,False
+2026-03-01,Sales,SMB,Employee_15,IC2,Active,2024-07-01,8,Remote,78000,2,False
+2026-03-01,Marketing,Brand,Employee_16,M1,Active,2020-09-01,66,London,140000,1,False
+2026-03-01,Marketing,Brand,Employee_17,IC3,Active,2022-05-15,46,Remote,108000,1,False
+2026-03-01,Marketing,Growth,Employee_18,IC2,Active,2024-02-01,13,Singapore,85000,0,False
+2026-03-01,Marketing,Growth,Employee_19,IC1,Active,2025-06-01,9,Remote,72000,0,False
+2026-03-01,Finance,FP&A,Employee_20,M2,Active,2019-11-01,76,New York,155000,0,False
+2026-03-01,Finance,FP&A,Employee_21,IC3,Active,2022-03-01,48,New York,112000,0,False
+2026-03-01,Finance,Accounting,Employee_22,IC2,Active,2023-08-01,19,London,88000,1,False
+2026-03-01,HR,People Ops,Employee_23,M1,Active,2021-02-01,61,London,130000,0,False
+2026-03-01,HR,Recruiting,Employee_24,IC2,Active,2023-11-01,16,Remote,82000,1,False
+2026-03-01,Operations,Infra,Employee_25,IC3,Active,2022-07-01,44,New York,115000,0,False
+2026-03-01,Operations,Infra,Employee_26,IC2,Active,2024-09-01,6,Singapore,87000,0,False
+2026-03-01,Legal,Compliance,Employee_27,M1,Active,2020-06-01,69,London,145000,0,False
+2026-03-01,Legal,Compliance,Employee_28,IC3,Active,2023-02-01,25,Remote,110000,0,False
+2026-04-01,Engineering,Platform,Employee_01,IC4,Active,2022-01-15,39,London,135000,1,False
+2026-04-01,Engineering,Platform,Employee_02,IC3,Active,2023-06-01,22,Remote,110000,1,False
+2026-04-01,Engineering,Platform,Employee_03,IC3,Active,2023-09-12,19,Singapore,108000,1,False
+2026-04-01,Engineering,Platform,Employee_04,IC2,Active,2026-02-10,2,London,90000,1,False
+2026-04-01,Engineering,Data,Employee_05,M2,Active,2020-03-01,74,New York,160000,2,False
+2026-04-01,Engineering,Data,Employee_06,IC4,Active,2021-07-20,56,Remote,132000,2,False
+2026-04-01,Engineering,Data,Employee_07,IC2,Terminated,2024-04-01,12,New York,88000,2,True
+2026-04-01,Engineering,Data,Employee_08,IC1,Active,2026-03-01,1,Remote,75000,2,False
+2026-04-01,Engineering,Security,Employee_09,M1,Active,2021-11-01,53,London,145000,1,False
+2026-04-01,Engineering,Security,Employee_10,IC3,On Leave,2022-08-15,44,London,112000,1,False
+2026-04-01,Sales,Enterprise,Employee_11,IC3,Active,2023-01-10,27,New York,95000,0,False
+2026-04-01,Sales,Enterprise,Employee_12,IC4,Active,2021-05-03,59,London,118000,0,False
+2026-04-01,Sales,Mid-Market,Employee_13,IC3,Active,2022-10-01,30,New York,92000,1,False
+2026-04-01,Sales,Mid-Market,Employee_14,IC2,Active,2024-01-15,15,Singapore,82000,1,False
+2026-04-01,Sales,SMB,Employee_15,IC2,Active,2024-07-01,9,Remote,78000,1,False
+2026-04-01,Marketing,Brand,Employee_16,M1,Active,2020-09-01,67,London,140000,0,False
+2026-04-01,Marketing,Brand,Employee_17,IC3,Terminated,2022-05-15,47,Remote,108000,0,True
+2026-04-01,Marketing,Growth,Employee_18,IC2,Active,2024-02-01,14,Singapore,85000,1,False
+2026-04-01,Marketing,Growth,Employee_19,IC1,Active,2025-06-01,10,Remote,72000,1,False
+2026-04-01,Finance,FP&A,Employee_20,M2,Active,2019-11-01,77,New York,155000,0,False
+2026-04-01,Finance,FP&A,Employee_21,IC3,Active,2022-03-01,49,New York,112000,0,False
+2026-04-01,Finance,Accounting,Employee_22,IC2,Active,2023-08-01,20,London,88000,0,False
+2026-04-01,HR,People Ops,Employee_23,M1,Active,2021-02-01,62,London,130000,0,False
+2026-04-01,HR,Recruiting,Employee_24,IC2,Active,2023-11-01,17,Remote,82000,0,False
+2026-04-01,Operations,Infra,Employee_25,IC3,Active,2022-07-01,45,New York,115000,1,False
+2026-04-01,Operations,Infra,Employee_26,IC2,Active,2024-09-01,7,Singapore,87000,1,False
+2026-04-01,Legal,Compliance,Employee_27,M1,Active,2020-06-01,70,London,145000,0,False
+2026-04-01,Legal,Compliance,Employee_28,IC3,Active,2023-02-01,26,Remote,110000,0,False

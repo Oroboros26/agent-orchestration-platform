@@ -1,0 +1,37 @@
+[
+  {
+    "id": "sales-001",
+    "question": "Who is the top performing sales rep by quota attainment in March 2026?",
+    "must_contain": ["Carla", "131"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Carla Mendes hit 131.3% attainment in March. Answer must name her and include the percentage."
+  },
+  {
+    "id": "sales-002",
+    "question": "Which sales rep missed their quota in March 2026?",
+    "must_contain": ["Emily", "David"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Emily Santos (36%) and David Kim (0%) missed quota. Answer must name at least one."
+  },
+  {
+    "id": "sales-003",
+    "question": "How many deals are currently in Negotiation stage?",
+    "must_contain": ["2", "3"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Multiple deals in Negotiation across both months. Answer must give a count."
+  },
+  {
+    "id": "sales-004",
+    "question": "What is the total pipeline value of deals in Proposal stage?",
+    "must_contain": ["USD", "$"],
+    "must_not_contain": ["I don't know", "cannot"],
+    "notes": "Several Proposal deals exist. Answer must sum them and give a dollar total."
+  },
+  {
+    "id": "sales-005",
+    "question": "Which region has the highest total closed won revenue in March 2026?",
+    "must_contain": ["EMEA", "AMER"],
+    "must_not_contain": ["I don't know"],
+    "notes": "EMEA (Carla: $210k) vs AMER (Alice: $180k). Answer must name the winning region."
+  }
+]

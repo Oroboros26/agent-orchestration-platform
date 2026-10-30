@@ -1,0 +1,28 @@
+{
+  "version": "v1.0.0",
+  "system": {
+    "template": "system.j2",
+    "variables": {
+      "agent_role": "legal document analyst with expertise in contract law",
+      "domain": "contract analysis and risk assessment",
+      "capabilities": [
+        "Extract and classify contract clauses",
+        "Assess risk level (low / medium / high) per clause",
+        "Identify missing standard clauses",
+        "Return structured JSON output"
+      ],
+      "output_format": "JSON",
+      "top_k": 3
+    }
+  },
+  "user": {
+    "template": "user.j2",
+    "variables": {}
+  },
+  "few_shot_examples": [
+    {
+      "input": "Analyze the indemnification clause.",
+      "output": "{\"clause_type\": \"indemnification\", \"risk_level\": \"high\", \"summary\": \"Party A indemnifies Party B for all damages without cap.\"}"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {"name": "MONTH", "type": "DATE", "description": "First day of the reporting month"},
+  {"name": "DEPARTMENT", "type": "VARCHAR", "description": "Business department name"},
+  {"name": "COST_CENTER", "type": "VARCHAR", "description": "Finance cost center code"},
+  {"name": "BUDGET_USD", "type": "NUMBER", "description": "Approved budget for the period in USD"},
+  {"name": "ACTUALS_USD", "type": "NUMBER", "description": "Actual spend for the period in USD"},
+  {"name": "VARIANCE_USD", "type": "NUMBER", "description": "Budget minus actuals (positive = under budget)"},
+  {"name": "VARIANCE_PCT", "type": "FLOAT", "description": "Variance as a percentage of budget"},
+  {"name": "HEADCOUNT", "type": "INTEGER", "description": "Number of employees in the department"},
+  {"name": "COST_PER_HEAD", "type": "NUMBER", "description": "Actuals divided by headcount"},
+  {"name": "CATEGORY", "type": "VARCHAR", "description": "Spend category: personnel, software, travel, other"}
+]

@@ -1,0 +1,13 @@
+[
+  {"name": "MONTH", "type": "DATE", "description": "Month of the incident (YYYY-MM-01)"},
+  {"name": "INCIDENT_ID", "type": "VARCHAR", "description": "Unique incident identifier (INC-XXXX)"},
+  {"name": "SEVERITY", "type": "VARCHAR", "description": "Incident severity: P1 (critical), P2 (high), P3 (medium), P4 (low)"},
+  {"name": "SERVICE", "type": "VARCHAR", "description": "Affected service or system name"},
+  {"name": "TEAM_OWNER", "type": "VARCHAR", "description": "Team responsible for resolution: Platform, Data, Security, Infra"},
+  {"name": "STATUS", "type": "VARCHAR", "description": "Current status: Open, Resolved, In Progress"},
+  {"name": "TIME_TO_DETECT_MINS", "type": "NUMBER", "description": "Minutes from incident start to detection"},
+  {"name": "TIME_TO_RESOLVE_MINS", "type": "NUMBER", "description": "Minutes from detection to full resolution (null if unresolved)"},
+  {"name": "ROOT_CAUSE", "type": "VARCHAR", "description": "Root cause category: Deployment, Config, Infra, Third-party, Unknown"},
+  {"name": "CUSTOMER_IMPACTED", "type": "BOOLEAN", "description": "True if the incident affected end customers"},
+  {"name": "POSTMORTEM_DONE", "type": "BOOLEAN", "description": "True if a postmortem was completed"}
+]

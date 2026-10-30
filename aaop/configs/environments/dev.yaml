@@ -1,0 +1,4 @@
+model_tier: fast
+log_level: debug
+budget_limit_usd: 1.0
+langsmith_tracing: false

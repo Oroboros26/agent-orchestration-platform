@@ -1,0 +1,40 @@
+# Agent Registry
+# Controls which version of each agent is active per environment.
+#
+#   dev  = always set when the agent exists
+#   uat  = null means not explicitly promoted — UAT falls back to dev version automatically
+#   prod = must be explicitly set — no fallback
+
+agents:
+
+  finance-finance-summary:
+    description: Budget vs actuals analysis for the Finance team
+    business_unit: finance
+    source_view: finance_summary
+    dev: v1.1.0
+    uat: v1.0.0
+    prod: v1.0.0
+
+  sales-sales-pipeline:
+    description: Pipeline, quota attainment, and deal stage tracking for Sales
+    business_unit: sales
+    source_view: sales_pipeline
+    dev: v1.0.0
+    uat: null
+    prod: null
+
+  supply-chain-supply-chain-inventory:
+    description: Inventory levels, stockouts, and supplier performance for Supply Chain
+    business_unit: supply-chain
+    source_view: supply_chain_inventory
+    dev: v1.0.0
+    uat: null
+    prod: null
+
+  hr-hr-headcount:
+    description: Headcount, attrition, and open roles for HR and People Ops
+    business_unit: hr
+    source_view: hr_headcount
+    dev: v1.0.0
+    uat: null
+    prod: null

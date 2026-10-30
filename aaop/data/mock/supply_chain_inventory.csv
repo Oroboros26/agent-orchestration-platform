@@ -1,0 +1,21 @@
+MONTH,SKU,PRODUCT_NAME,CATEGORY,SUPPLIER_NAME,UNITS_ON_HAND,UNITS_ORDERED,UNITS_SOLD,REORDER_POINT,DAYS_OF_STOCK,LEAD_TIME_DAYS,ON_TIME_DELIVERY_PCT,UNIT_COST_USD,STOCKOUT_FLAG
+2026-03-01,SKU-001,Wireless Headphones Pro,electronics,TechSource Ltd,320,0,410,200,23.4,14,95.0,48.50,False
+2026-03-01,SKU-002,USB-C Hub 7-Port,electronics,TechSource Ltd,85,200,290,150,8.8,14,95.0,22.00,True
+2026-03-01,SKU-003,Ergonomic Office Chair,industrial,FurniCo Global,145,0,60,80,72.5,21,88.0,210.00,False
+2026-03-01,SKU-004,Running Shoes Size 10,apparel,StyleMax,230,100,180,120,38.3,10,99.0,65.00,False
+2026-03-01,SKU-005,Protein Bar Box 24pk,food,NutriWholesale,510,0,620,300,24.8,7,100.0,18.00,False
+2026-03-01,SKU-006,Mechanical Keyboard TKL,electronics,TechSource Ltd,40,150,95,100,12.6,14,95.0,89.00,True
+2026-03-01,SKU-007,Yoga Mat Premium,apparel,StyleMax,190,0,75,80,76.0,10,99.0,35.00,False
+2026-03-01,SKU-008,Industrial Gloves L,industrial,SafetyFirst Inc,600,0,120,200,150.0,28,72.0,8.50,False
+2026-03-01,SKU-009,Granola Mix 1kg,food,NutriWholesale,88,300,210,150,12.6,7,100.0,12.00,False
+2026-03-01,SKU-010,Laptop Stand Aluminium,electronics,TechSource Ltd,175,0,140,100,37.5,14,95.0,55.00,False
+2026-04-01,SKU-001,Wireless Headphones Pro,electronics,TechSource Ltd,280,200,450,200,18.7,14,95.0,48.50,False
+2026-04-01,SKU-002,USB-C Hub 7-Port,electronics,TechSource Ltd,190,0,105,150,54.3,14,95.0,22.00,False
+2026-04-01,SKU-003,Ergonomic Office Chair,industrial,FurniCo Global,110,50,85,80,38.8,21,88.0,210.00,False
+2026-04-01,SKU-004,Running Shoes Size 10,apparel,StyleMax,195,0,135,120,43.3,10,99.0,65.00,False
+2026-04-01,SKU-005,Protein Bar Box 24pk,food,NutriWholesale,380,200,530,300,21.5,7,100.0,18.00,False
+2026-04-01,SKU-006,Mechanical Keyboard TKL,electronics,TechSource Ltd,180,0,115,100,47.0,14,95.0,89.00,False
+2026-04-01,SKU-007,Yoga Mat Premium,apparel,StyleMax,160,0,55,80,87.3,10,99.0,35.00,False
+2026-04-01,SKU-008,Industrial Gloves L,industrial,SafetyFirst Inc,520,0,80,200,195.0,28,72.0,8.50,False
+2026-04-01,SKU-009,Granola Mix 1kg,food,NutriWholesale,290,0,198,150,44.0,7,100.0,12.00,False
+2026-04-01,SKU-010,Laptop Stand Aluminium,electronics,TechSource Ltd,155,100,120,100,38.8,14,95.0,55.00,False

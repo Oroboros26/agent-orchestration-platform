@@ -1,0 +1,37 @@
+[
+  {
+    "id": "fin-001",
+    "question": "Which department is most over budget in March 2026?",
+    "must_contain": ["Engineering", "14500", "12"],
+    "must_not_contain": ["I don't know", "insufficient"],
+    "notes": "Engineering is over by $14,500 (-12.08%). Answer must name the dept and the amount."
+  },
+  {
+    "id": "fin-002",
+    "question": "How many departments are under budget in March 2026?",
+    "must_contain": ["Marketing", "HR"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Marketing and HR are under budget in March. Answer should list them or give a count >= 2."
+  },
+  {
+    "id": "fin-003",
+    "question": "What is the total actual spend across all departments in March 2026?",
+    "must_contain": ["450", "500"],
+    "must_not_contain": ["I don't know", "cannot"],
+    "notes": "Total actuals March 2026 ≈ $450k-$500k range. Answer must include a number."
+  },
+  {
+    "id": "fin-004",
+    "question": "Which department has the highest cost per head in March 2026?",
+    "must_contain": ["Engineering", "Legal"],
+    "must_not_contain": ["I don't know"],
+    "notes": "Engineering or Legal typically highest cost per head. Answer must name a department."
+  },
+  {
+    "id": "fin-005",
+    "question": "Compare Engineering budget vs actuals between February and March 2026.",
+    "must_contain": ["Engineering", "February", "March"],
+    "must_not_contain": ["I don't know", "only one month"],
+    "notes": "Both months exist in the data. Answer must mention both months and show numbers for each."
+  }
+]

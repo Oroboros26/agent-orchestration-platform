@@ -1,0 +1,4 @@
+model_tier: balanced
+log_level: warning
+budget_limit_usd: 50.0
+langsmith_tracing: true
